@@ -9,7 +9,7 @@ const config = {
 
 	kit: {
 		paths: {
-			base: dev ? '' : 'https://github.com/VikaLa7/GitPages'
+			base: dev ? '' : '/https://github.com/VikaLa7/GitPages'
 		},
 		adapter: adapter(),
 		
