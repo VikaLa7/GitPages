@@ -54,7 +54,7 @@
 
 <script lang="ts">
   import { onMount } from "svelte";
-  interface MemeData {
+  interface ComicData {
       img: string;
       title: string;
       year: string;
@@ -72,7 +72,7 @@
       const response = await fetch(`https://fwd.innopolis.app/api/hw2?${params.toString()}`);
       const number = await response.text();
       const jokeResponse = await fetch(`https://getxkcd.vercel.app/api/comic?num=${number}`);
-      const joke_info: MemeData = await jokeResponse.json();
+      const joke_info: ComicData = await jokeResponse.json();
 
       img_description = {
           name: `${joke_info.title} `,
