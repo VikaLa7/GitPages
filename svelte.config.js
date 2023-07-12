@@ -8,7 +8,9 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
-	
+		paths: {
+			base: dev ? '' : 'https://github.com/VikaLa7/GitPages'
+		},
 		adapter: adapter(),
 		
 	},
